@@ -50,44 +50,40 @@
     <!-- Opción 3: Formulario de contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Envíame un mensaje</legend>
 
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Tu nombre" autocomplete="name"
+                       required minlength="2"><br><br>
 
-            <button type="submit">Enviar</button>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="tucorreo@ejemplo.com" autocomplete="email"
+                       required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40"
+                          placeholder="Escribe aquí tu mensaje..."
+                          required maxlength="500"></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </fieldset>
         </form>
     </section>
 
-        <!-- Opción 4: Galería de imágenes -->
-    <section id="galeria">
-        <h2>Galería</h2>
-        <figure>
-            <img src="img/foto1.jpg" alt="Descripción de la foto 1" width="300">
-            <figcaption>Foto 1</figcaption>
-        </figure>
-        <figure>
-            <img src="img/foto2.jpg" alt="Descripción de la foto 2" width="300">
-            <figcaption>Foto 2</figcaption>
-        </figure>
-        <figure>
-            <img src="img/foto3.jpg" alt="Descripción de la foto 3" width="300">
-            <figcaption>Foto 3</figcaption>
-        </figure>
-    </section>
-
-        <!-- Opción 5: Footer con redes sociales -->
-    <footer id="footer">
+    <!-- Footer con enlaces a redes sociales -->
+    <footer>
         <p>Sígueme en:</p>
         <ul>
-            <li>GitHub: github.com/tu-usuario</li>
-            <li>LinkedIn: linkedin.com/in/tu-usuario</li>
-            <li>Instagram: @tu-usuario</li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         </ul>
-        <p>&copy; 2026 Roberto Solanilla</p>
     </footer>
-
 </body>
 </html>
